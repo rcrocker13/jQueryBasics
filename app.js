@@ -12,16 +12,8 @@ Good luck!
 
 */
 
-function loadPuppy () {
-	var articleItem, img;
-
-	articleItem = $(".article-item").first();
-	console.log(articleItem);
-
-	img = articleItem.children("img");
-	console.log(img);
-
-	img.attr("src", "http://placekitten.com/350/150");
+function loadKitten () {
+	$("img").attr("src", "http://placekitten.com/350/150");
 };
 
-$(loadPuppy);
+$(loadKitten);
