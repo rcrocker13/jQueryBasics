@@ -21,7 +21,7 @@ function loadPuppy () {
 	img = articleItem.children("img");
 	console.log(img);
 
-	img.attr("src", "http://dummyimage.com/350x150/d435d4/c3c6eb");
+	img.attr("src", "http://placekitten.com/350/150");
 };
 
 $(loadPuppy);
