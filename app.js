@@ -1,0 +1,27 @@
+/*
+
+For this quiz, can you use this script, which is in the <head> of index.html,
+to change the boring placeholder image to a picture of a cute puppy?
+
+Remember, you'll need to pass a function into the jQuery object to run
+when the document is ready.
+
+Here's a URL for a picture of a puppy: http://placepuppy.it/350/150
+
+Good luck!
+
+*/
+
+function loadPuppy () {
+	var articleItem, img;
+
+	articleItem = $(".article-item").first();
+	console.log(articleItem);
+
+	img = articleItem.children("img");
+	console.log(img);
+
+	img.attr("src", "http://dummyimage.com/350x150/d435d4/c3c6eb");
+};
+
+$(loadPuppy);
